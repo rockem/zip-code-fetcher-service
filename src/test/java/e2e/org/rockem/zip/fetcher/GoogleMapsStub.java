@@ -2,6 +2,7 @@ package e2e.org.rockem.zip.fetcher;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.google.gson.Gson;
+import org.hamcrest.Matcher;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
@@ -19,16 +20,24 @@ public class GoogleMapsStub {
         configureFor("localhost", 2345);
     }
 
-    public GoogleMapsStub receiveLocation(double[] location) {
+    public GoogleMapsStub given(double[] location) {
         this.location = location;
         return this;
     }
 
-    public void andFail() {
+    public void willReturn(String result) {
         stubFor(get(
                 urlEqualTo("/maps/api/geocode/json?bounds=" + location[0] + "," + location[1]))
                 .willReturn(aResponse()
                         .withStatus(200)
-                        .withBody(new Gson().toJson(map(entry("status", "ZERO_RESULTS"))))));
+                        .withBody(result)));
+    }
+
+    public static String aZeroResult() {
+        return new Gson().toJson(map(entry("status", "ZERO_RESULTS")));
+    }
+
+    public void hasReceivedLocation(double[] location) {
+        verify(getRequestedFor(urlEqualTo("/maps/api/geocode/json?bounds=" + location[0] + "," + location[1])));
     }
 }
