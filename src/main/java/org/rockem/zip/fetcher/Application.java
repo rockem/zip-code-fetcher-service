@@ -27,7 +27,6 @@ public class Application {
     }
 
 
-
     @Autowired
     public Application(GoogleMapsApi googleMapsApi) {
         this.googleMapsApi = googleMapsApi;
