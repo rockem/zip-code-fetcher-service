@@ -2,7 +2,6 @@ package e2e.org.rockem.zip.fetcher;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.google.gson.Gson;
-import org.hamcrest.Matcher;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
@@ -13,10 +12,8 @@ public class GoogleMapsStub {
 
     private double[] location;
 
-    private final WireMockServer wm = new WireMockServer(options().port(2345));
-
     public GoogleMapsStub() {
-        wm.start();
+        new WireMockServer(options().port(2345)).start();
         configureFor("localhost", 2345);
     }
 
@@ -27,10 +24,14 @@ public class GoogleMapsStub {
 
     public void willReturn(String result) {
         stubFor(get(
-                urlEqualTo("/maps/api/geocode/json?bounds=" + location[0] + "," + location[1]))
-                .willReturn(aResponse()
-                        .withStatus(200)
-                        .withBody(result)));
+                urlMatching("/maps/api/geocode/json.*"))
+                .withQueryParam("bounds", equalTo(boundsValue(location)))
+                .withQueryParam("key", equalTo("SECRET_TOKEN"))
+                .willReturn(aResponse().withBody(result)));
+    }
+
+    private String boundsValue(double[] location) {
+        return location[0] + "," + location[1] + "|" + location[2] + "," + location[3];
     }
 
     public static String aZeroResult() {
@@ -38,6 +39,7 @@ public class GoogleMapsStub {
     }
 
     public void hasReceivedLocation(double[] location) {
-        verify(getRequestedFor(urlEqualTo("/maps/api/geocode/json?bounds=" + location[0] + "," + location[1])));
+
+        verify(getRequestedFor(urlMatching("/maps/api/geocode/json.*")).withQueryParam("bounds", equalTo(boundsValue(location))));
     }
 }

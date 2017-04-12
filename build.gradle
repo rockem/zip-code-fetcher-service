@@ -9,6 +9,9 @@ repositories {
 
 dependencies {
 
+    compileOnly "org.projectlombok:lombok:1.16.16"
+
+
     compile "org.springframework.boot:spring-boot-starter-web:1.5.2.RELEASE"
 
     // Utils

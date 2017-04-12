@@ -1,0 +1,4 @@
+googleMaps:
+  api:
+    url: http://localhost:2345
+    key: SECRET_TOKEN

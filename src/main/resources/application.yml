@@ -1,0 +1,7 @@
+googleMaps:
+  api:
+    url: https://maps.googleapis.com
+    key: AIzaSyDw21XdTevOsWcHuWPcUvpOUJqh74Tdvz4
+
+logging.level:
+  org.rockem.zip.fetcher: DEBUG
