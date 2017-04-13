@@ -1,4 +1,4 @@
-package org.rockem.zip.fetcher;
+package org.rockem.zipmeup;
 
 import lombok.Getter;
 import lombok.Setter;

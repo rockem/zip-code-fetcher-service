@@ -4,7 +4,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.rockem.zip.fetcher.Application;
+import org.rockem.zipmeup.Application;
 
 import java.io.IOException;
 

@@ -1,12 +1,11 @@
-package org.rockem.zip.fetcher;
+package org.rockem.zipmeup;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.ResponseErrorHandler;
@@ -19,25 +18,19 @@ import java.net.URI;
 
 @Slf4j
 @RestController
-@SpringBootApplication
-public class Application {
+public class ZipcodeController {
 
     private final RestTemplate restTemplate = new RestTemplate();
     private final GoogleMapsApi googleMapsApi;
 
-    public static void main(String... args) {
-        SpringApplication.run(Application.class, args);
-    }
-
 
     @Autowired
-    public Application(GoogleMapsApi googleMapsApi) {
+    public ZipcodeController(GoogleMapsApi googleMapsApi) {
         this.googleMapsApi = googleMapsApi;
         restTemplate.setErrorHandler(new MyErrorHandler());
     }
 
-
-    @RequestMapping("/zipcode")
+    @RequestMapping(value = "/zipcode", method = RequestMethod.GET)
     public ResponseEntity<ZipCode> zip(@RequestParam("location") String location) throws UnsupportedEncodingException {
         ResponseEntity<String> r = restTemplate.getForEntity(createURIWith(location), String.class);
         log.debug("Result from google maps is:\n" + r.getBody());
@@ -46,7 +39,7 @@ public class Application {
 
     private URI createURIWith(String location) {
         return UriComponentsBuilder.fromHttpUrl(googleMapsApi.getUrl() + "/maps/api/geocode/json")
-        .queryParam("latlng", location).queryParam("key", googleMapsApi.getKey()).build().encode().toUri();
+                .queryParam("latlng", location).queryParam("key", googleMapsApi.getKey()).build().encode().toUri();
     }
 
     private class MyErrorHandler implements ResponseErrorHandler {
@@ -60,5 +53,4 @@ public class Application {
             return false;
         }
     }
-
 }
