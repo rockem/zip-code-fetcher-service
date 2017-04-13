@@ -2,21 +2,21 @@ package e2e.org.rockem.zip.fetcher;
 
 import org.junit.Test;
 
-import static e2e.org.rockem.zip.fetcher.GoogleMapsStub.aZeroResult;
+import static e2e.org.rockem.zip.fetcher.GoogleMapsStub.invalidRequest;
 
 public class ZipFetcherServiceE2E {
 
-    private static final double[] UNKNOWN_LOCATION = new double[]{1, 0, 1, 0};
+    private static final String INVALID_LOCATION = "100,100";
 
     private final AppDriver application = new AppDriver();
     private final GoogleMapsStub googleMaps = new GoogleMapsStub();
 
     @Test
     public void failToFetchZipcodeOnNonValidLocation() throws Exception {
-        googleMaps.given(UNKNOWN_LOCATION).willReturn(aZeroResult());
+        googleMaps.given(INVALID_LOCATION).willReturn(invalidRequest());
 
-        application.receiveTheLocation(UNKNOWN_LOCATION);
-        googleMaps.hasReceivedLocation(UNKNOWN_LOCATION);
+        application.receiveTheLocation(INVALID_LOCATION);
+        googleMaps.hasReceivedLocation(INVALID_LOCATION);
         application.retrieveUserError();
     }
 

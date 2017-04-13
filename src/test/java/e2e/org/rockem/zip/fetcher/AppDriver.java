@@ -7,8 +7,6 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.rockem.zip.fetcher.Application;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
@@ -24,16 +22,8 @@ public class AppDriver {
         Application.main();
     }
 
-    public void receiveTheLocation(double[] location) throws IOException {
-        lastResponse = httpClient.execute(new HttpGet(APP_DOMAIN + "/zipcode?bounds=" + boundsValue(location)));
-    }
-
-    private String boundsValue(double[] location) {
-        try {
-            return URLEncoder.encode(location[0] + "," + location[1] + "|" + location[2] + "," + location[3], "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
-        }
+    public void receiveTheLocation(String location) throws IOException {
+        lastResponse = httpClient.execute(new HttpGet(APP_DOMAIN + "/zipcode?location=" + location));
     }
 
     public void retrieveUserError() {
