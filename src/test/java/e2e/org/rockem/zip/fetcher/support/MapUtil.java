@@ -1,4 +1,4 @@
-package e2e.org.rockem.zip.fetcher;
+package e2e.org.rockem.zip.fetcher.support;
 
 import java.util.AbstractMap;
 import java.util.Arrays;

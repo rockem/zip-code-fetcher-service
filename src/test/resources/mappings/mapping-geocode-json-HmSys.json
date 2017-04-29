@@ -1,0 +1,24 @@
+{
+  "id" : "a5ed2dc9-9ea3-3937-b7e2-05104fe10f91",
+  "request" : {
+    "url" : "/maps/api/geocode/json?latlng=32.0842,34.8124&key=AIzaSyDw21XdTevOsWcHuWPcUvpOUJqh74Tdvz4&language=he",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-geocode-json-HmSys.json",
+    "headers" : {
+      "Content-Type" : "application/json; charset=UTF-8",
+      "Date" : "Sat, 29 Apr 2017 06:28:05 GMT",
+      "Expires" : "Sun, 30 Apr 2017 06:28:05 GMT",
+      "Access-Control-Allow-Origin" : "*",
+      "Server" : "mafe",
+      "X-XSS-Protection" : "1; mode=block",
+      "X-Frame-Options" : "SAMEORIGIN",
+      "Cache-Control" : "public, max-age=86400",
+      "Age" : "3884",
+      "Alt-Svc" : "quic=\":443\"; ma=2592000; v=\"37,36,35\""
+    }
+  },
+  "uuid" : "a5ed2dc9-9ea3-3937-b7e2-05104fe10f91"
+}
