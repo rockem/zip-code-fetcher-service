@@ -1,0 +1,20 @@
+{
+  "id" : "e547ac33-f6d1-3012-b4b1-9ee54966173f",
+  "request" : {
+    "url" : "/zip_data.nsf/SearchZip?OpenAgent&Location=%D7%A8%D7%9E%D7%AA%20%D7%92%D7%9F&Street=%D7%A0%D7%95%D7%A8%D7%93%D7%90%D7%95&House=3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-zip_data.nsf-SearchZip-EVaAR.txt",
+    "headers" : {
+      "Date" : "Sat, 29 Apr 2017 08:43:29 GMT",
+      "Content-Type" : "text/html; charset=US-ASCII",
+      "Expires" : "Wed, 03 May 2017 23:59:59 GMT",
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept",
+      "Server" : "Israel-Post"
+    }
+  },
+  "uuid" : "e547ac33-f6d1-3012-b4b1-9ee54966173f"
+}

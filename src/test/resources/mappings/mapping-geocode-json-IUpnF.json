@@ -1,0 +1,25 @@
+{
+  "id" : "69ba746f-5305-353e-98b7-af338c1cb0f1",
+  "request" : {
+    "url" : "/maps/api/geocode/json?latlng=100,100&key=AIzaSyDw21XdTevOsWcHuWPcUvpOUJqh74Tdvz4&language=he",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "bodyFileName" : "body-geocode-json-IUpnF.json",
+    "headers" : {
+      "Content-Type" : "application/json; charset=UTF-8",
+      "Date" : "Fri, 28 Apr 2017 22:23:13 GMT",
+      "Pragma" : "no-cache",
+      "Expires" : "Fri, 01 Jan 1990 00:00:00 GMT",
+      "Cache-Control" : "no-cache, must-revalidate",
+      "Access-Control-Allow-Origin" : "*",
+      "Server" : "mafe",
+      "X-XSS-Protection" : "1; mode=block",
+      "X-Frame-Options" : "SAMEORIGIN",
+      "Alt-Svc" : "quic=\":443\"; ma=2592000; v=\"37,36,35\"",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "69ba746f-5305-353e-98b7-af338c1cb0f1"
+}

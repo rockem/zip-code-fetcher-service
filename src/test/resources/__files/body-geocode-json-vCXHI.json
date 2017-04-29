@@ -1,0 +1,348 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "2",
+               "short_name" : "2",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "אחד העם",
+               "short_name" : "אחד העם",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "אזור",
+               "short_name" : "אזור",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "מחוז המרכז",
+               "short_name" : "מחוז המרכז",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "ישראל",
+               "short_name" : "IL",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "אחד העם 2, אזור, ישראל",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 32.022121,
+                  "lng" : 34.8121272
+               },
+               "southwest" : {
+                  "lat" : 32.0216924,
+                  "lng" : 34.8119515
+               }
+            },
+            "location" : {
+               "lat" : 32.0219058,
+               "lng" : 34.8120198
+            },
+            "location_type" : "RANGE_INTERPOLATED",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 32.0232556802915,
+                  "lng" : 34.8133883302915
+               },
+               "southwest" : {
+                  "lat" : 32.0205577197085,
+                  "lng" : 34.8106903697085
+               }
+            }
+         },
+         "place_id" : "EiXXkNeX15Mg15TXotedIDIsINeQ15bXldeoLCDXmdep16jXkNec",
+         "types" : [ "street_address" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "יצחק שדה/ז'בוטינסקי",
+               "short_name" : "יצחק שדה/ז'בוטינסקי",
+               "types" : [
+                  "bus_station",
+                  "establishment",
+                  "point_of_interest",
+                  "transit_station"
+               ]
+            },
+            {
+               "long_name" : "אזור",
+               "short_name" : "אזור",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "מחוז המרכז",
+               "short_name" : "מחוז המרכז",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "ישראל",
+               "short_name" : "IL",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "יצחק שדה/ז'בוטינסקי, אזור, ישראל",
+         "geometry" : {
+            "location" : {
+               "lat" : 32.022537,
+               "lng" : 34.811747
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 32.0238859802915,
+                  "lng" : 34.81309598029149
+               },
+               "southwest" : {
+                  "lat" : 32.0211880197085,
+                  "lng" : 34.8103980197085
+               }
+            }
+         },
+         "place_id" : "ChIJ5dVguixLHRURvNHcLTeqjCM",
+         "types" : [
+            "bus_station",
+            "establishment",
+            "point_of_interest",
+            "transit_station"
+         ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "אזור",
+               "short_name" : "אזור",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "אזור חולון",
+               "short_name" : "אזור חולון",
+               "types" : [ "administrative_area_level_3", "political" ]
+            },
+            {
+               "long_name" : "מחוז המרכז",
+               "short_name" : "מחוז המרכז",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "ישראל",
+               "short_name" : "IL",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "אזור, ישראל",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 32.034342,
+                  "lng" : 34.8217581
+               },
+               "southwest" : {
+                  "lat" : 32.0094829,
+                  "lng" : 34.7905639
+               }
+            },
+            "location" : {
+               "lat" : 32.029558,
+               "lng" : 34.799648
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 32.034342,
+                  "lng" : 34.8217581
+               },
+               "southwest" : {
+                  "lat" : 32.0094829,
+                  "lng" : 34.7905639
+               }
+            }
+         },
+         "place_id" : "ChIJYUAPOjRLHRUR_NH9fByeZTY",
+         "types" : [ "locality", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "אזור חולון",
+               "short_name" : "אזור חולון",
+               "types" : [ "administrative_area_level_3", "political" ]
+            },
+            {
+               "long_name" : "מחוז המרכז",
+               "short_name" : "מחוז המרכז",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "ישראל",
+               "short_name" : "IL",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "אזור חולון, ישראל",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 32.046815,
+                  "lng" : 34.8293839
+               },
+               "southwest" : {
+                  "lat" : 31.988736,
+                  "lng" : 34.733055
+               }
+            },
+            "location" : {
+               "lat" : 32.0167556,
+               "lng" : 34.779603
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 32.046815,
+                  "lng" : 34.8293839
+               },
+               "southwest" : {
+                  "lat" : 31.988736,
+                  "lng" : 34.733055
+               }
+            }
+         },
+         "place_id" : "ChIJvaj-ISZLHRURTijUzXm_7sw",
+         "types" : [ "administrative_area_level_3", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "Tel Aviv Metropolitan Area",
+               "short_name" : "Tel Aviv Metropolitan Area",
+               "types" : [ "political" ]
+            },
+            {
+               "long_name" : "ישראל",
+               "short_name" : "IL",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Tel Aviv Metropolitan Area",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 32.2095311,
+                  "lng" : 34.9287191
+               },
+               "southwest" : {
+                  "lat" : 31.85245,
+                  "lng" : 34.7126462
+               }
+            },
+            "location" : {
+               "lat" : 32.1124384,
+               "lng" : 34.8403408
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 32.2095311,
+                  "lng" : 34.9287191
+               },
+               "southwest" : {
+                  "lat" : 31.85245,
+                  "lng" : 34.7126462
+               }
+            }
+         },
+         "place_id" : "ChIJV5ZXN8BLHRURPZaNuihfyI8",
+         "types" : [ "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "מחוז המרכז",
+               "short_name" : "מחוז המרכז",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "ישראל",
+               "short_name" : "IL",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "מחוז המרכז, ישראל",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 32.4126018,
+                  "lng" : 35.051422
+               },
+               "southwest" : {
+                  "lat" : 31.7571918,
+                  "lng" : 34.66654279999999
+               }
+            },
+            "location" : {
+               "lat" : 31.9521108,
+               "lng" : 34.906551
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 32.4126018,
+                  "lng" : 35.051422
+               },
+               "southwest" : {
+                  "lat" : 31.7571918,
+                  "lng" : 34.66654279999999
+               }
+            }
+         },
+         "place_id" : "ChIJ1dI8PjMVHRURwtHEUjGbcmU",
+         "types" : [ "administrative_area_level_1", "political" ]
+      },
+      {
+         "address_components" : [
+            {
+               "long_name" : "ישראל",
+               "short_name" : "IL",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "ישראל",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 33.33280500000001,
+                  "lng" : 35.896244
+               },
+               "southwest" : {
+                  "lat" : 29.47969999999999,
+                  "lng" : 34.2673871
+               }
+            },
+            "location" : {
+               "lat" : 31.046051,
+               "lng" : 34.851612
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 33.33280500000001,
+                  "lng" : 35.896244
+               },
+               "southwest" : {
+                  "lat" : 29.4906464,
+                  "lng" : 34.2673871
+               }
+            }
+         },
+         "place_id" : "ChIJi8mnMiRJABURuiw1EyBCa2o",
+         "types" : [ "country", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

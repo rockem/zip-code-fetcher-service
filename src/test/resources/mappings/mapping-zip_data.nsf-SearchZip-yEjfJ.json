@@ -1,0 +1,17 @@
+{
+  "id" : "4702eb2d-59ec-372d-8439-24b49a06d2ce",
+  "request" : {
+    "url" : "/zip_data.nsf/SearchZip?OpenAgent&Location=%25u05EA%25u05DC%20%25u05D0%25u05D1%25u05D9%25u05D1%20-%20%25u05D9%25u05E4%25u05D5&POB=&Street=%25u05D3%25u05D9%25u05D6%25u05E0%25u05D2%25u05D5%25u05E3&House=99&Entrance=",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-zip_data.nsf-SearchZip-yEjfJ.txt",
+    "headers" : {
+      "Server" : "Lotus-Domino",
+      "Date" : "Fri, 28 Apr 2017 22:13:21 GMT",
+      "Content-Type" : "text/html; charset=US-ASCII"
+    }
+  },
+  "uuid" : "4702eb2d-59ec-372d-8439-24b49a06d2ce"
+}

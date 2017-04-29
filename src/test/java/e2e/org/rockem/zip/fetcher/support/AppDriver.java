@@ -1,5 +1,8 @@
-package e2e.org.rockem.zip.fetcher;
+package e2e.org.rockem.zip.fetcher.support;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -28,5 +31,13 @@ public class AppDriver {
 
     public void retrieveUserError() {
         assertThat(lastResponse.getStatusLine().getStatusCode(), is(400));
+    }
+
+    public void retrieve(String zipcode) throws IOException {
+        assertThat(lastResponseBody().get("zipcode").getAsString(), is(zipcode));
+    }
+
+    private JsonObject lastResponseBody() throws IOException {
+        return new Gson().fromJson(IOUtils.toString(lastResponse.getEntity().getContent(), "UTF-8"), JsonObject.class);
     }
 }

@@ -1,4 +1,7 @@
 googleMaps:
   api:
-    url: http://localhost:2345
-    key: SECRET_TOKEN
+    url: http://localhost:3456
+    key: AIzaSyDw21XdTevOsWcHuWPcUvpOUJqh74Tdvz4
+
+israelPost:
+  url: http://localhost:3456
