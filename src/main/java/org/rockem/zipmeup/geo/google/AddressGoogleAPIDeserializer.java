@@ -31,11 +31,10 @@ public class AddressGoogleAPIDeserializer implements JsonDeserializer<Address> {
 
     private static abstract class AddressComponent {
 
-        public Address.AddressBuilder appendIfNeeded(JsonElement element, Address.AddressBuilder builder) {
+        public void appendIfNeeded(JsonElement element, Address.AddressBuilder builder) {
             if(element.getAsJsonObject().get("types").getAsJsonArray().contains(new JsonPrimitive(type()))) {
                 append(element.getAsJsonObject().get("long_name").getAsString(), builder);
             }
-            return builder;
         }
 
         protected abstract void append(String value, Address.AddressBuilder builder);

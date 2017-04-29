@@ -2,6 +2,7 @@ package it.org.rockem.zipmeup.geo.google;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.ArgumentMatcher;
 import org.rockem.zipmeup.geo.Address;
 import org.rockem.zipmeup.geo.google.GoogleMapsApi;
 import org.rockem.zipmeup.geo.google.GoogleMapsAddressFinder;
@@ -25,5 +26,19 @@ public class GoogleMapsAddressFinderIT_Prod {
     @Test
     public void shouldRetrieveAddressForLocation() throws Exception {
         assertThat(finder.find("32.0212,34.812"), is(ADDRESS));
+    }
+
+    private class AddressMatcher extends ArgumentMatcher<Address> {
+
+        private final Address expected;
+
+        public AddressMatcher(Address address) {
+            this.expected = address;
+        }
+
+        @Override
+        public boolean matches(Object argument) {
+            return false;
+        }
     }
 }

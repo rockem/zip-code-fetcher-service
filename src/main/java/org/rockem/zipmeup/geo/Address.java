@@ -24,4 +24,8 @@ public class Address {
         Gson gson = new GsonBuilder().registerTypeAdapter(Address.class, adapter).create();
         return gson.fromJson(json, Address.class);
     }
+
+    public String getHouseNumber() {
+        return houseNumber.split("-")[0];
+    }
 }
